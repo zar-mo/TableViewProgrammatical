@@ -14,6 +14,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func button(_ sender: UIButton) {
+        
+        let storyboard = UIStoryboard(name: "Table", bundle: nil)
+        let tableController = storyboard.instantiateViewController(withIdentifier: "TableVC")
+        present(tableController, animated: true)
+    }
+    
 }
 
